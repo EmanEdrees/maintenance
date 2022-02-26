@@ -41,9 +41,9 @@ class MyApp extends StatelessWidget {
                     TextStyle(fontWeight: FontWeight.normal,fontSize: 15),
                     textAlign: TextAlign.justify,),
                   Center(
-                    child: OutlineButton(onPressed: (){
+                    child: OutlinedButton(onPressed: (){
                       print('outlinebutton');
-                    }, child: Text("ClickMe")),
+                    }, child: Text("ClickMe"),),
                   ),
                 ],
               ),
