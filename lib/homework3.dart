@@ -6,6 +6,7 @@ void main() {
 
 }
 class MyApp extends StatelessWidget {
+  bool? _checked = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children:  [
                   Text("Writter from Home", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
                   Text("Las Vegas,NV Remote", style: TextStyle(fontWeight: FontWeight.normal,fontSize: 15),),
                   SizedBox(height: 20,),
@@ -32,6 +33,67 @@ class MyApp extends StatelessWidget {
                     textAlign: TextAlign.justify,),
                   SizedBox(height: 20,),
                   Text("Requirements", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
+                  SizedBox(height: 10,),
+                  Row(
+                    children: [
+                      Image.asset("assets/images/check.jpg",width: 24, height: 24,),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text(
+                          "Capture from Camera",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Image.asset("assets/images/check.jpg",width: 24, height: 24,),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text(
+                          "prefect gig for you Take",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Image.asset("assets/images/check.jpg",width: 24, height: 24,),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text(
+                          "Capture from Camera",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Image.asset("assets/images/check.jpg",width: 24, height: 24,),
+                      Padding(
+                        padding: const EdgeInsets.all(5.0),
+                        child: Text(
+                          "Capture from Camera",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   SizedBox(height: 20,),
                   Text("Full Job Description", style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22),),
                   Text("If you appreciate the formatities of writing this might be the"
@@ -40,10 +102,17 @@ class MyApp extends StatelessWidget {
                     style:
                     TextStyle(fontWeight: FontWeight.normal,fontSize: 15),
                     textAlign: TextAlign.justify,),
+                  SizedBox(height: 20,),
+
                   Center(
-                    child: OutlinedButton(onPressed: (){
+                    child: ElevatedButton(onPressed: (){
                       print('outlinebutton');
-                    }, child: Text("ClickMe"),),
+                    }, child: Text("Apply",style:TextStyle(color: Colors.white),),
+                      style: ButtonStyle(backgroundColor:
+                    MaterialStateProperty.all(Colors.black), padding:MaterialStateProperty.all(EdgeInsets.only(left: 150,right: 150,top:10,bottom: 10)) ,shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0),),),
+                    ),
+                  ),
                   ),
                 ],
               ),
@@ -51,5 +120,8 @@ class MyApp extends StatelessWidget {
           ),
         ));
   }
+}
+
+void setState(Null Function() param0) {
 }
 
